@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="primeOrNot"></h1>
+    <script>
+        x = prompt("Check entered number is Prime or not")
+        fact = 0
+        for (let a = 2; a < x; a++) {
+            if (x % a == 0) {
+                fact++
+            }
+        }
+        if (fact == 0) {
+            document.getElementById("primeOrNot").innerText = (`${x} is Prime Number`)
+        }
+        else {
+            document.getElementById("primeOrNot").innerText = (`${x} is not Prime Number`)
+        }
+
+    </script>
+</body>
+
+</html>
