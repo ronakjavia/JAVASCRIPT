@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="value"></h1>
+    <h1 id="bmi"></h1>
+    <script>
+        w = prompt("Enter Weight of a person ( age>=20 ) in kg : ")
+        h = prompt("Enter Height of a person in meters : ")
+
+        bmi = w / (h * h)
+
+        if (bmi < 18.5) {
+            person = "Person is UnderWeight because it's BMI is less than 18.5"
+        }
+        else if (bmi >= 18.5 && bmi <= 24.9) {
+            person = "Person is Normal because it's BMI is between 18.5 and 24.9"
+        }
+        else if (bmi >= 25 && bmi <= 29.9) {
+            person = "Person is OverWeight because it's BMI is less than 18.5"
+        }
+        else if (bmi >= 30) {
+            person = "Person is Obese because it's BMI is greater than or equal to 30"
+        }
+        else {
+            person = "PLEASE ENTER VALID WEIGHT AND HEIGHT"
+        }
+        document.getElementById("value").innerText = bmi
+        document.getElementById("bmi").innerText = person
+
+    </script>
+</body>
+
+</html>
