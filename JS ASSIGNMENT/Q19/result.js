@@ -1,6 +1,5 @@
-// import countries from './countries.js'
-const countries = import('./countries.js')
-console.log(countries)
+const countries = require('./countries.js')
+const web_techs = require('./web_techs.js')
 
-const web_techs = import('./web_techs.js')
+console.log(countries)
 console.log(web_techs)
